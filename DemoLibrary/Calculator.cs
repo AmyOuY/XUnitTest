@@ -19,13 +19,20 @@ namespace DemoLibrary
         }
 
         public static double Multiply(double x, double y)
-        {
+        {          
             return x * y;
         }
 
         public static double Divide(double x, double y)
         {
-            return x / y;
+            if (y == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return x / y;
+            }
         }
            
     }
