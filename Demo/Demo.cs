@@ -13,7 +13,7 @@ namespace Demo
 {
     public partial class Demo : Form
     {
-        BindingList<ProductModel> products = new BindingList<ProductModel>();
+        BindingList<ProductModel> products = new BindingList<ProductModel>(ProductData.GetAllProducts());
 
         public Demo()
         {
