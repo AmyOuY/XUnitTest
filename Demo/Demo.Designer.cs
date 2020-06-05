@@ -40,14 +40,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.resultLabel = new System.Windows.Forms.Label();
             this.resultValue = new System.Windows.Forms.TextBox();
-            this.employeeDataLabel = new System.Windows.Forms.Label();
-            this.usersLabel = new System.Windows.Forms.Label();
-            this.usersDropdown = new System.Windows.Forms.ComboBox();
-            this.firstNameLabel = new System.Windows.Forms.Label();
-            this.firstNameValue = new System.Windows.Forms.TextBox();
-            this.lastNameValue = new System.Windows.Forms.TextBox();
-            this.lastNameLabel = new System.Windows.Forms.Label();
+            this.productDataLabel = new System.Windows.Forms.Label();
+            this.productsLabel = new System.Windows.Forms.Label();
+            this.productsDropdown = new System.Windows.Forms.ComboBox();
+            this.productNameLabel = new System.Windows.Forms.Label();
+            this.productNameValue = new System.Windows.Forms.TextBox();
+            this.priceValue = new System.Windows.Forms.TextBox();
+            this.priceLabel = new System.Windows.Forms.Label();
             this.clearButton = new System.Windows.Forms.Button();
+            this.quantityValue = new System.Windows.Forms.TextBox();
+            this.quantityLabel = new System.Windows.Forms.Label();
+            this.addproductButton = new System.Windows.Forms.Button();
+            this.clearProductButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // calculatorLabel
@@ -164,65 +168,65 @@
             this.resultValue.Size = new System.Drawing.Size(149, 30);
             this.resultValue.TabIndex = 11;
             // 
-            // employeeDataLabel
+            // productDataLabel
             // 
-            this.employeeDataLabel.AutoSize = true;
-            this.employeeDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeDataLabel.Location = new System.Drawing.Point(620, 19);
-            this.employeeDataLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.employeeDataLabel.Name = "employeeDataLabel";
-            this.employeeDataLabel.Size = new System.Drawing.Size(209, 32);
-            this.employeeDataLabel.TabIndex = 12;
-            this.employeeDataLabel.Text = "Employee Data";
+            this.productDataLabel.AutoSize = true;
+            this.productDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productDataLabel.Location = new System.Drawing.Point(741, 19);
+            this.productDataLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.productDataLabel.Name = "productDataLabel";
+            this.productDataLabel.Size = new System.Drawing.Size(180, 32);
+            this.productDataLabel.TabIndex = 12;
+            this.productDataLabel.Text = "Product Data";
             // 
-            // usersLabel
+            // productsLabel
             // 
-            this.usersLabel.AutoSize = true;
-            this.usersLabel.Location = new System.Drawing.Point(598, 116);
-            this.usersLabel.Name = "usersLabel";
-            this.usersLabel.Size = new System.Drawing.Size(63, 25);
-            this.usersLabel.TabIndex = 13;
-            this.usersLabel.Text = "Users";
+            this.productsLabel.AutoSize = true;
+            this.productsLabel.Location = new System.Drawing.Point(598, 116);
+            this.productsLabel.Name = "productsLabel";
+            this.productsLabel.Size = new System.Drawing.Size(89, 25);
+            this.productsLabel.TabIndex = 13;
+            this.productsLabel.Text = "Products";
             // 
-            // usersDropdown
+            // productsDropdown
             // 
-            this.usersDropdown.FormattingEnabled = true;
-            this.usersDropdown.Location = new System.Drawing.Point(679, 108);
-            this.usersDropdown.Name = "usersDropdown";
-            this.usersDropdown.Size = new System.Drawing.Size(235, 33);
-            this.usersDropdown.TabIndex = 14;
+            this.productsDropdown.FormattingEnabled = true;
+            this.productsDropdown.Location = new System.Drawing.Point(697, 108);
+            this.productsDropdown.Name = "productsDropdown";
+            this.productsDropdown.Size = new System.Drawing.Size(302, 33);
+            this.productsDropdown.TabIndex = 14;
             // 
-            // firstNameLabel
+            // productNameLabel
             // 
-            this.firstNameLabel.AutoSize = true;
-            this.firstNameLabel.Location = new System.Drawing.Point(598, 246);
-            this.firstNameLabel.Name = "firstNameLabel";
-            this.firstNameLabel.Size = new System.Drawing.Size(101, 25);
-            this.firstNameLabel.TabIndex = 15;
-            this.firstNameLabel.Text = "FirstName";
+            this.productNameLabel.AutoSize = true;
+            this.productNameLabel.Location = new System.Drawing.Point(598, 246);
+            this.productNameLabel.Name = "productNameLabel";
+            this.productNameLabel.Size = new System.Drawing.Size(131, 25);
+            this.productNameLabel.TabIndex = 15;
+            this.productNameLabel.Text = "ProductName";
             // 
-            // firstNameValue
+            // productNameValue
             // 
-            this.firstNameValue.Location = new System.Drawing.Point(705, 241);
-            this.firstNameValue.Name = "firstNameValue";
-            this.firstNameValue.Size = new System.Drawing.Size(209, 30);
-            this.firstNameValue.TabIndex = 16;
+            this.productNameValue.Location = new System.Drawing.Point(736, 241);
+            this.productNameValue.Name = "productNameValue";
+            this.productNameValue.Size = new System.Drawing.Size(263, 30);
+            this.productNameValue.TabIndex = 16;
             // 
-            // lastNameValue
+            // priceValue
             // 
-            this.lastNameValue.Location = new System.Drawing.Point(705, 306);
-            this.lastNameValue.Name = "lastNameValue";
-            this.lastNameValue.Size = new System.Drawing.Size(209, 30);
-            this.lastNameValue.TabIndex = 18;
+            this.priceValue.Location = new System.Drawing.Point(736, 300);
+            this.priceValue.Name = "priceValue";
+            this.priceValue.Size = new System.Drawing.Size(263, 30);
+            this.priceValue.TabIndex = 18;
             // 
-            // lastNameLabel
+            // priceLabel
             // 
-            this.lastNameLabel.AutoSize = true;
-            this.lastNameLabel.Location = new System.Drawing.Point(598, 311);
-            this.lastNameLabel.Name = "lastNameLabel";
-            this.lastNameLabel.Size = new System.Drawing.Size(101, 25);
-            this.lastNameLabel.TabIndex = 17;
-            this.lastNameLabel.Text = "LastName";
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Location = new System.Drawing.Point(598, 304);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(56, 25);
+            this.priceLabel.TabIndex = 17;
+            this.priceLabel.Text = "Price";
             // 
             // clearButton
             // 
@@ -234,19 +238,60 @@
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
+            // quantityValue
+            // 
+            this.quantityValue.Location = new System.Drawing.Point(736, 362);
+            this.quantityValue.Name = "quantityValue";
+            this.quantityValue.Size = new System.Drawing.Size(263, 30);
+            this.quantityValue.TabIndex = 21;
+            // 
+            // quantityLabel
+            // 
+            this.quantityLabel.AutoSize = true;
+            this.quantityLabel.Location = new System.Drawing.Point(598, 366);
+            this.quantityLabel.Name = "quantityLabel";
+            this.quantityLabel.Size = new System.Drawing.Size(85, 25);
+            this.quantityLabel.TabIndex = 20;
+            this.quantityLabel.Text = "Quantity";
+            this.quantityLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // addproductButton
+            // 
+            this.addproductButton.Location = new System.Drawing.Point(793, 426);
+            this.addproductButton.Name = "addproductButton";
+            this.addproductButton.Size = new System.Drawing.Size(148, 43);
+            this.addproductButton.TabIndex = 22;
+            this.addproductButton.Text = "Add Product";
+            this.addproductButton.UseVisualStyleBackColor = true;
+            this.addproductButton.Click += new System.EventHandler(this.addproductButton_Click);
+            // 
+            // clearProductButton
+            // 
+            this.clearProductButton.Location = new System.Drawing.Point(813, 486);
+            this.clearProductButton.Name = "clearProductButton";
+            this.clearProductButton.Size = new System.Drawing.Size(108, 43);
+            this.clearProductButton.TabIndex = 23;
+            this.clearProductButton.Text = "Clear";
+            this.clearProductButton.UseVisualStyleBackColor = true;
+            this.clearProductButton.Click += new System.EventHandler(this.clearProductButton_Click);
+            // 
             // Demo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 703);
+            this.Controls.Add(this.clearProductButton);
+            this.Controls.Add(this.addproductButton);
+            this.Controls.Add(this.quantityValue);
+            this.Controls.Add(this.quantityLabel);
             this.Controls.Add(this.clearButton);
-            this.Controls.Add(this.lastNameValue);
-            this.Controls.Add(this.lastNameLabel);
-            this.Controls.Add(this.firstNameValue);
-            this.Controls.Add(this.firstNameLabel);
-            this.Controls.Add(this.usersDropdown);
-            this.Controls.Add(this.usersLabel);
-            this.Controls.Add(this.employeeDataLabel);
+            this.Controls.Add(this.priceValue);
+            this.Controls.Add(this.priceLabel);
+            this.Controls.Add(this.productNameValue);
+            this.Controls.Add(this.productNameLabel);
+            this.Controls.Add(this.productsDropdown);
+            this.Controls.Add(this.productsLabel);
+            this.Controls.Add(this.productDataLabel);
             this.Controls.Add(this.resultValue);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.label1);
@@ -282,14 +327,18 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label resultLabel;
         private System.Windows.Forms.TextBox resultValue;
-        private System.Windows.Forms.Label employeeDataLabel;
-        private System.Windows.Forms.Label usersLabel;
-        private System.Windows.Forms.ComboBox usersDropdown;
-        private System.Windows.Forms.Label firstNameLabel;
-        private System.Windows.Forms.TextBox firstNameValue;
-        private System.Windows.Forms.TextBox lastNameValue;
-        private System.Windows.Forms.Label lastNameLabel;
+        private System.Windows.Forms.Label productDataLabel;
+        private System.Windows.Forms.Label productsLabel;
+        private System.Windows.Forms.ComboBox productsDropdown;
+        private System.Windows.Forms.Label productNameLabel;
+        private System.Windows.Forms.TextBox productNameValue;
+        private System.Windows.Forms.TextBox priceValue;
+        private System.Windows.Forms.Label priceLabel;
         private System.Windows.Forms.Button clearButton;
+        private System.Windows.Forms.TextBox quantityValue;
+        private System.Windows.Forms.Label quantityLabel;
+        private System.Windows.Forms.Button addproductButton;
+        private System.Windows.Forms.Button clearProductButton;
     }
 }
 

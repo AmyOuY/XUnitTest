@@ -13,9 +13,13 @@ namespace Demo
 {
     public partial class Demo : Form
     {
+        BindingList<ProductModel> products = new BindingList<ProductModel>();
+
         public Demo()
         {
             InitializeComponent();
+
+            WireUpProductList();
         }
 
         private bool IsValidXY()
@@ -97,6 +101,64 @@ namespace Demo
             xValue.Text = "";
             yValue.Text = "";
             resultValue.Text = "";
+        }
+
+
+        public void WireUpProductList()
+        {
+            productsDropdown.DataSource = null;
+            productsDropdown.DataSource = products;
+            productsDropdown.DisplayMember = "ProductInfo";
+        }
+
+        private bool IsValidProductInfo()
+        {
+            if (productNameValue.Text.Length == 0)
+            {
+                return false;
+            }
+
+            decimal price;
+            if (!decimal.TryParse(priceValue.Text, out price))
+            {
+                return false;
+            }
+
+            int quantity;
+            if (!int.TryParse(quantityValue.Text, out quantity))
+            {
+                return false;
+            }
+
+            return true;
+        }
+
+        private void addproductButton_Click(object sender, EventArgs e)
+        {
+            if (IsValidProductInfo())
+            {
+                ProductModel product = new ProductModel();
+                product.ProductName = productNameValue.Text;
+                product.Price = decimal.Parse(priceValue.Text);
+                product.Quantity = int.Parse(quantityValue.Text);
+
+                ProductData.AddNewProduct(product);
+
+                productNameValue.Text = "";
+                priceValue.Text = "";
+                quantityValue.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("You need to fill in valid info for new product");
+            }
+        }
+
+        private void clearProductButton_Click(object sender, EventArgs e)
+        {
+            productNameValue.Text = "";
+            priceValue.Text = "";
+            quantityValue.Text = "";
         }
     }
 }
