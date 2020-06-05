@@ -143,6 +143,7 @@ namespace Demo
                 product.Quantity = int.Parse(quantityValue.Text);
 
                 ProductData.AddNewProduct(product);
+                products.Add(product);
 
                 productNameValue.Text = "";
                 priceValue.Text = "";
