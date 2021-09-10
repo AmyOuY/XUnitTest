@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Anagram.cs" />
     <Compile Include="Calculator.cs" />
     <Compile Include="LoadFile.cs" />
     <Compile Include="ProductData.cs" />

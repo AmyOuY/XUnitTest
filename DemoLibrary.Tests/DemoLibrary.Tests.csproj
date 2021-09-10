@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnagramTest.cs" />
     <Compile Include="CalculatorTests.cs" />
     <Compile Include="LoadFileTests.cs" />
     <Compile Include="ProductDataTests.cs" />
